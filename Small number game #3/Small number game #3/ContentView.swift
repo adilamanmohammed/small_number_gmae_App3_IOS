@@ -26,10 +26,16 @@ struct ContentView: View {
             {
                 Text(String(Number)).font(.largeTitle).fontWeight(.bold).foregroundColor(Color.yellow)
             }
-            else if Number < 31 && Number > -1
+            else if Number < 31 && Number >= 0
             {
                 Text(String(Number)).font(.largeTitle).fontWeight(.bold).foregroundColor(.green)
             }
+            else { // For negative numbers
+                            Text(String(Number))
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(.red)
+                        }
             
             
             
